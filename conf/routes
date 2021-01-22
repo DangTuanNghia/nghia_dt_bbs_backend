@@ -11,5 +11,8 @@
 #GET     /message                    controllers.AsyncController.message
 
 # Map static resources from the /public folder to the /assets URL path
+
+GET      /api/posts    @bbs.port.primary.webService.restAdapter.controller.post.Controller.list
+
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
